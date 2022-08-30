@@ -1,0 +1,105 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    background-image: url('https://9to5toys.com/wp-content/uploads/sites/5/2020/01/HVER-Pro-X-RGB-Mechanical-Keyboard.jpg?quality=82&strip=all');
+    background-size: cover;
+}
+
+h1{
+    color: whitesmoke;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 2px 2px 2px;
+}
+
+
+.popcontainer{
+    position: fixed;
+    left: 40%;
+    top: 50%;
+    height: 180px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://tse2.mm.bing.net/th?id=OIP.ynrLPTVzGNZcd_ryGT0fvwHaE8&pid=Api&P=0');
+    /* margin-left: 35%; */
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgb(0,0,0.4);
+    opacity: 1;
+    transition: all 0.7s;
+}
+
+input{
+  background-color: antiquewhite;
+  border: none;
+  border-radius: 10px;
+}
+
+label{
+    color:black;
+    font-size: x-large;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 2px 2px 2px;
+}
+
+.container button{
+    background-color: green;
+    height: 40px;
+    width: 100px;
+    margin-top: 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+}
+.container button:hover{
+    filter: brightness(2);
+}
+
+
+
+/* .container{
+    filter: blur(5),brightness(0.3);
+} */
+
+.popcontainer h2{
+    color: red;
+    font-size: xx-large;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 0 2px 2px 2px;
+}
+.popcontainer button{
+    background-color: red;
+    height: 20px;
+    width: 100px;
+    cursor: pointer;
+    margin-top: 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+.popcontainer button:hover{
+    filter: brightness(2);
+}
+
+.active.container{
+    filter: blur(8px);
+}  
+
+.active.popcontainer{
+    visibility: hidden;
+    opacity: 0;
+    top: 10%;
+}
+
